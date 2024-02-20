@@ -1,0 +1,28 @@
+.background-div {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  overflow: hidden;
+}
+
+.background-div > div {
+  flex: 0 0 100%;
+  height: 100%;
+  transition: transform 0.5s ease;
+}
+
+.background-div > div.active {
+  transform: translateX(0);
+}
+
+.background-div-1-pear {
+  background-color: var(--background-pear);
+}
+
+.background-div-2-apple {
+  background-color: var(--background-apple);
+}
+
+.background-div-3-exotic {
+  background-color: var(--background-exotic);
+}
