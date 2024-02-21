@@ -9,6 +9,7 @@
   flex: 0 0 100%;
   height: 100%;
   transition: transform 0.5s ease;
+  position: relative;
 }
 
 .background-div > div.active {
@@ -25,4 +26,8 @@
 
 .background-div-3-exotic {
   background-color: var(--background-exotic);
+}
+
+.background-image {
+  width: 100%;
 }

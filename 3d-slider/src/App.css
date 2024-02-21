@@ -4,5 +4,15 @@
   --background-exotic: #9B96FF;
 }
 
-.App {
+@font-face {
+  font-family: 'Clash Display Variable';
+  src: url('./Font/ClashDisplay_Complete/Fonts/WEB/fonts/ClashDisplay-Bold.woff2') format('woff2'), /* Modern Browsers */
+       url('./Font/ClashDisplay_Complete/Fonts/WEB/fonts/ClashDisplay-Bold.woff') format('woff'); /* Legacy Browsers */
+  font-weight: bold;
+  font-style: bold;
+}
+
+.clash-display {
+  font-family: 'Clash Display Variable';
+  font-weight: bold;
 }

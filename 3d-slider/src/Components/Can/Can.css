@@ -1,0 +1,25 @@
+.container {
+  position: relative;
+  width: 100%; /* Adjust width and height as needed */
+  height: 100%;
+}
+
+.labels-image {
+  height: 10.1rem; /* Same height as the can */
+  width: auto;
+  position: absolute;
+  top: 25%;
+  background-image: url(../../Assets/Can.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-mask-image: url(../../Assets/Can.png);
+  mask-image: url(../../Assets/Can.png);
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: bottom;
+  -webkit-background-blend-mode: multiply; /* Apply multiply effect */
+  background-blend-mode: multiply; /* Apply multiply effect */
+}
+
+
