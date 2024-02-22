@@ -16,8 +16,10 @@ overflow: hidden;
 }
 
 .fruit-slider-image {
-  width: 100%;
+  width: 120%;
   z-index: 2;
   position: absolute;
-  margin-top: 10%;
+  margin-top: 5rem;
+  left: 50%;
+  transform: translateX(-50%);
 }

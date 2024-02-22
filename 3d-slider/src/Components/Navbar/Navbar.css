@@ -12,9 +12,22 @@
 
 .left-navbar-div {
   display: flex;
-color: #298F52;
+
 transition: color 1.7s;
 }
+
+.left-navbar-div-slider1 {
+  color: #298F52;
+}
+
+.left-navbar-div-slider2 {
+  color: #D0584D;
+}
+
+.left-navbar-div-slider3 {
+  color: #8676EC;
+}
+
 
 .left-navbar-div>h1 {
   margin: 0;
