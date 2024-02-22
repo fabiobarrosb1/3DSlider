@@ -4,7 +4,7 @@ import Pears from "../../Assets/Pears.png";
 import Apples from "../../Assets/Apples.png";
 import PassionFruit from "../../Assets/Passion-fruit.png";
 import can from "../../Assets/Can.png";
-import labels from "../../Assets/Labels2.png";
+import labels from "../../Assets/Labels.png";
 import leave1 from "../../Assets/leave1.png";
 import leave2 from "../../Assets/leave2.png";
 import FruitsSlider from "../FruitsSlider/FruitsSlider";
@@ -132,7 +132,7 @@ const Background = () => {
       >
         <img src={PassionFruit} alt="" className="fruit-slider-image" />
       </div>
-      <div className="background-div">
+      <div className={`background-div background-div-slider${slider}`}>
         <div
           ref={(el) => (divRefs.current[0] = el)}
           className="background-div-1-pear"

@@ -5,6 +5,7 @@
   overflow: hidden;
 }
 
+
 .background-div-1-pear, .background-div-2-apple, .background-div-3-exotic {
   flex: 0 0 100%;
   height: 100%;
