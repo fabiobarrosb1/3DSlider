@@ -1,0 +1,23 @@
+.fruit-slider-div {
+  height: 300vh;
+  width: 100%;
+  position: absolute;
+  overflow: hidden;
+}
+
+.fruit-image-div {
+  height: 100vh;
+  position: absolute;
+
+width: 100%;
+z-index: 2;
+transition: transform 1.2s cubic-bezier(1, 0, 0, 1);
+overflow: hidden;
+}
+
+.fruit-slider-image {
+  width: 100%;
+  z-index: 2;
+  position: absolute;
+  margin-top: 10%;
+}
