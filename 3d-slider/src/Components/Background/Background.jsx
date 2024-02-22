@@ -12,6 +12,8 @@ const Background = () => {
   const divRefs = useRef([]);
   const [slider, setSlider] = useState(1);
   const [maskPosition, setMaskPosition] = useState("left");
+  const [buttonColor, setButtonColor] = useState("#077334");
+  const [headerColor, setHeaderColor] = useState("#298F52");
 
   const scrollToNext = (index) => {
     const nextIndex = (index + 1) % divRefs.current.length;
@@ -29,24 +31,33 @@ const Background = () => {
   const handleClick = (slider) => {
     if (slider === 1) {
       setMaskPosition("left");
+      setButtonColor("#077334");
+      setHeaderColor("#298F52");
     } else if (slider === 2) {
       setMaskPosition("center");
+      setButtonColor("#B83224");
+      setHeaderColor("#F06659");
     } else if (slider === 3) {
       setMaskPosition("right");
+      setButtonColor("#433EB2");
+      setHeaderColor("#8676EC");
     }
   };
 
   return (
     <>
-      <Navbar />
+      <Navbar headerColor={headerColor} />
       <img src={can} alt="" className="can-image" />
-      <img
-        src={labels}
-        alt=""
-        className="labels-image"
-        style={{ maskPosition: maskPosition, backgroundPosition: "center" }}
-      />
-      <button className="clash-display shop-taste-button">Shop Taste</button>
+
+      <img src={can} alt="" class="can-image" id="can-mask" />
+      <img src={labels} alt="" class="labels-image" />
+
+      <button
+        className="clash-display shop-taste-button"
+        style={{ color: buttonColor }}
+      >
+        Shop Taste
+      </button>
       <div
         onClick={() => {
           scrollToNext(0);

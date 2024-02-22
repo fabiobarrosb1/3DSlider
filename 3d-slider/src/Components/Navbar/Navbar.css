@@ -13,6 +13,7 @@
 .left-navbar-div {
   display: flex;
 color: #298F52;
+transition: color 1.7s;
 }
 
 .left-navbar-div>h1 {

@@ -1,10 +1,10 @@
 import React from "react";
 import "./Navbar.css";
 
-const Navbar = () => {
+const Navbar = ({ headerColor }) => {
   return (
     <div className="navbar">
-      <div className="left-navbar-div">
+      <div className="left-navbar-div" style={{ color: headerColor }}>
         <h1 className="clash-display">Fruity</h1>
       </div>
       <div className="center-navbar-div">
