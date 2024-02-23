@@ -272,3 +272,25 @@
   z-index: 2;
   /* top: 1rem; */
 }
+
+.shadow {
+  position: absolute;
+    left: -4rem;
+    bottom: 4.5rem;
+    width: 40rem;
+    height: auto;
+}
+
+.shadow2 {
+  position: absolute;
+    left: -15rem;
+    width: 20rem;
+    bottom: 8rem;
+}
+
+.shadow3 {
+  width: 20rem;
+    position: absolute;
+    top: 18rem;
+    right: -19rem;
+}

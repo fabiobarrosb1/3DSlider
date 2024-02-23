@@ -7,6 +7,9 @@ import can from "../../Assets/Can.png";
 import labels from "../../Assets/Labels.png";
 import leave1 from "../../Assets/leave1.png";
 import leave2 from "../../Assets/leave2.png";
+import shadow from "../../Assets/Shadow.png";
+import shadow2 from "../../Assets/Shadow2.png";
+import shadow3 from "../../Assets/Shadow3.png";
 import FruitsSlider from "../FruitsSlider/FruitsSlider";
 import Navbar from "../Navbar/Navbar";
 
@@ -87,6 +90,9 @@ const Background = () => {
           alt=""
           className={`leave2-image leave2-image-slider${slider}`}
         />
+        <img src={shadow} alt="" className="shadow" />
+        <img src={shadow2} alt="" className="shadow2" />
+        <img src={shadow3} alt="" className="shadow3" />
         <div className="mask">
           <img src={can} className="can-can" alt="" />
           <img
