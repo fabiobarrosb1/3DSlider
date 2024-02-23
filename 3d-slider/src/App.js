@@ -1,10 +1,10 @@
 import "./App.css";
-import Background from "./Components/Background/Background";
+import Slider from "./Components/Slider/Slider";
 
 function App() {
   return (
     <div className="App">
-      <Background />
+      <Slider />
     </div>
   );
 }

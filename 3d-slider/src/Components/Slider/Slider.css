@@ -59,12 +59,21 @@
   transform: translateY(100%);
 }
 
+@keyframes fallAnimation {
+  from {
+    transform: translateY(-100%); 
+  }
+  to {
+    transform: translateY(0%);   }
+}
+
 .pear-position-1 {
   transform: translateY(0%);
 }
 
 .pear-position-2 {
   transform: translateY(100%);
+
 }
 .pear-position-3 {
   transform: translateY(-100%);

@@ -1,0 +1,43 @@
+
+.shop-taste-button {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2rem;
+  border: none;
+  margin: 0;
+  padding: 1.5rem 2.5rem;
+  border-radius: 4rem;
+  z-index: 3;
+  transition: color 1s, background-color 1s;
+}
+
+
+.button-slider1 {
+  color: #077334;
+  background-color: white;
+}
+.button-slider1:hover {
+  color: white;
+  background-color: #077334;
+}
+
+.button-slider2 {
+  color: #B83224;
+  background-color: white;
+}
+.button-slider2:hover {
+  color: white;
+  background-color: #B83224;
+}
+
+.button-slider3 {
+  color: #433EB2;
+  background-color: white;
+}
+
+.button-slider3:hover {
+  color: white;
+  background-color: #433EB2;
+}
