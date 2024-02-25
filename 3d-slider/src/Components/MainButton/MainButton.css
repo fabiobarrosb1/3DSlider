@@ -11,6 +11,7 @@
   border-radius: 4rem;
   z-index: 3;
   transition: color 1s, background-color 1s;
+  text-wrap: nowrap;
 }
 
 
@@ -41,3 +42,7 @@
   color: white;
   background-color: #433EB2;
 }
+
+@media screen and (max-width: 430px) {
+
+  }
