@@ -26,20 +26,22 @@ const Slider = () => {
 
   return (
     <>
-      <Navbar slider={slider} />
-      <Can slider={slider} />
-      <MainButton slider={slider} />
-      <FruitsSlider
-        slider={slider}
-        setSlider={setSlider}
-        scrollToNext={scrollToNext}
-      />
-      <TextSlider
-        slider={slider}
-        divRefs={divRefs}
-        setSlider={setSlider}
-        scrollToNext={scrollToNext}
-      />
+      <div className="slider">
+        <Navbar slider={slider} />
+        <Can slider={slider} />
+        <MainButton slider={slider} />
+        <FruitsSlider
+          slider={slider}
+          setSlider={setSlider}
+          scrollToNext={scrollToNext}
+        />
+        <TextSlider
+          slider={slider}
+          divRefs={divRefs}
+          setSlider={setSlider}
+          scrollToNext={scrollToNext}
+        />
+      </div>
     </>
   );
 };

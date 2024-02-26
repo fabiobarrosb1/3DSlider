@@ -3,8 +3,8 @@
   z-index: 2;
   position: absolute;
   left: 50%;
-  transform: translate(-50%, -50%);
-  top: 50%;
+  transform: translateX(-50%);
+  top: 8rem;
 }
 .mask{
   margin: 20px auto;
@@ -131,7 +131,7 @@
 
 @media screen and (max-width: 1440px) {
   .container {
-    transform: translate(-50%, -30%) scale(1.5);
+    transform: translateX(-50%) scale(1.1);
   }
   .shadow2 {
     left: -11rem;

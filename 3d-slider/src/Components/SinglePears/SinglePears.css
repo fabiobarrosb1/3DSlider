@@ -1,0 +1,31 @@
+.single-pears-div {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.single-pear-1 {
+  position: absolute;
+  width: 14rem;
+  height: auto;
+  top: 70%;
+  left: 5%;
+}
+.single-pear-2 {
+  position: absolute;
+  width: 11rem;
+  height: auto;
+  top: 8rem;
+  right: 3rem;
+  transform: rotate(356deg);
+}
+.single-pear-3 {
+  position: absolute;
+  width: 5rem;
+  height: auto;
+}
+.single-pear-4 {
+  position: absolute;
+  width: 5rem;
+  height: auto;
+}

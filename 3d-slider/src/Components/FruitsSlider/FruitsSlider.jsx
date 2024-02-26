@@ -1,10 +1,26 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./FruitSlider.css";
 import Pears from "../../Assets/Pears.webp";
 import Apples from "../../Assets/Apples.webp";
 import PassionFruit from "../../Assets/Passion-fruit.webp";
+import SinglePears from "../SinglePears/SinglePears";
 
 const FruitsSlider = ({ scrollToNext, setSlider, slider }) => {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    // Clean up the event listener when the component unmounts
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <>
       <div
@@ -14,7 +30,11 @@ const FruitsSlider = ({ scrollToNext, setSlider, slider }) => {
         }}
         className={`fruit-image-div pear-position-${slider}`}
       >
-        <img src={Pears} alt="" className="fruit-slider-image" />
+        {windowWidth > 768 ? (
+          <img src={Pears} alt="" className="fruit-slider-image" />
+        ) : (
+          <SinglePears />
+        )}
       </div>
       <div
         onClick={() => {
