@@ -1,13 +1,13 @@
 import React from "react";
-import can from "../../Assets/Can.png";
+import can from "../../Assets/Can.webp";
 import "./Can.css";
 import "../Slider/Slider.css";
-import labels from "../../Assets/Labels.png";
-import leave1 from "../../Assets/leave1.png";
-import leave2 from "../../Assets/leave2.png";
-import shadow from "../../Assets/Shadow.png";
-import shadow2 from "../../Assets/Shadow2.png";
-import shadow3 from "../../Assets/Shadow3.png";
+import labels from "../../Assets/Labels.webp";
+import leave1 from "../../Assets/leave1.webp";
+import leave2 from "../../Assets/leave2.webp";
+import shadow from "../../Assets/Shadow.webp";
+import shadow2 from "../../Assets/Shadow2.webp";
+import shadow3 from "../../Assets/Shadow3.webp";
 
 const Can = ({ slider }) => {
   return (

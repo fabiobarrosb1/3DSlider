@@ -1,8 +1,5 @@
 import React, { useRef, useState } from "react";
 import "./Slider.css";
-import Pears from "../../Assets/Pears.png";
-import Apples from "../../Assets/Apples.png";
-import PassionFruit from "../../Assets/Passion-fruit.png";
 import "../FruitsSlider/FruitSlider.css";
 import Navbar from "../Navbar/Navbar";
 import MainButton from "../MainButton/MainButton";
