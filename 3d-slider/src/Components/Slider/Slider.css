@@ -221,14 +221,6 @@
 
 
 
-.container {
-  max-width: 13rem;
-  z-index: 2;
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  top: 50%;
-}
 .mask{
   margin: 20px auto;
   display: block;

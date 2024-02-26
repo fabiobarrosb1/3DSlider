@@ -65,6 +65,7 @@
     bottom: 4.5rem;
     width: 40rem;
     height: auto;
+    transition: all 1.2s cubic-bezier(1, 0, 0, 1);
 }
 
 .shadow2 {
@@ -72,6 +73,7 @@
     left: -15rem;
     width: 20rem;
     bottom: 8rem;
+    transition: all 1.2s cubic-bezier(1, 0, 0, 1);
 }
 
 .shadow3 {
@@ -79,6 +81,7 @@
     position: absolute;
     top: 18rem;
     right: -19rem;
+    transition: all 1.2s cubic-bezier(1, 0, 0, 1);
 }
 .leave1-image , .leave2-image {
   position: absolute;
@@ -126,7 +129,16 @@
 
 
 
-
-
+@media screen and (max-width: 1440px) {
+  .container {
+    transform: translate(-50%, -30%) scale(1.5);
+  }
+  .shadow2 {
+    left: -11rem;
+  }
+  .shadow3 {
+    right: -16rem;
+  }
+}
 
 
