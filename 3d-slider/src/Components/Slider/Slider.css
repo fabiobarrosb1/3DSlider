@@ -1,8 +1,30 @@
-.slider {
+.slider-container {
   display: flex;
   flex-direction: column;
-  min-height: 100%;
   width: 100vw;
+  overflow: hidden;
+  min-height: 100vh;
+  white-space: nowrap;
+}
+
+.slider {
+
+  width: 300vw;
+  overflow: hidden;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  transition: transform 1.2s cubic-bezier(1, 0, 0, 1);
+}
+
+.slider-slide-1 {
+  transform: translateX(0);
+}
+.slider-slide-2 {
+  transform: translateX(-100vw);
+}
+.slider-slide-3 {
+  transform: translateX(-200vw);
 }
 
 .background-div {
@@ -19,6 +41,9 @@
   min-height: 100%;
   transition: transform 0.5s ease;
   position: relative;
+  width: 100vw;
+  min-height: 100vh;
+  max-width: 100vw;
 }
 
 .background-div > div.active {
@@ -51,53 +76,10 @@
   margin: 0 auto;
   text-align: center;
   position: absolute;
-  top: 5rem;
-}
-
-.apple-position-1 {
-  transform: translateY(-100%);
-
-}
-
-.apple-position-2 {
-  transform: translateY(0%);
-}
-
-.apple-position-3 {
-  transform: translateY(100%);
-}
-
-@keyframes fallAnimation {
-  from {
-    transform: translateY(-100%); 
-  }
-  to {
-    transform: translateY(0%);   }
-}
-
-.pear-position-1 {
-  transform: translateY(0%);
-}
-
-.pear-position-2 {
-  transform: translateY(100%);
-
-}
-.pear-position-3 {
-  transform: translateY(-100%);
+  top: 10rem;
 }
 
 
-.exotic-position-1 {
-  transform: translateY(-200%);
-
-}
-.exotic-position-2 {
-  transform: translateY(-100%);
-}
-.exotic-position-3 {
-  transform: translateY((0%));
-}
 
 .can-image {
   height: 35rem;

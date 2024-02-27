@@ -5,7 +5,7 @@ import Apples from "../../Assets/Apples.webp";
 import PassionFruit from "../../Assets/Passion-fruit.webp";
 import SinglePears from "../SinglePears/SinglePears";
 
-const FruitsSlider = ({ scrollToNext, setSlider, slider }) => {
+const FruitsSlider = ({ setSlider, slider }) => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   useEffect(() => {
@@ -23,36 +23,25 @@ const FruitsSlider = ({ scrollToNext, setSlider, slider }) => {
 
   return (
     <>
-      <div
-        onClick={() => {
-          scrollToNext(0);
-          setSlider(2);
-        }}
-        className={`fruit-image-div pear-position-${slider}`}
-      >
-        {windowWidth > 768 ? (
-          <img src={Pears} alt="" className="fruit-slider-image" />
-        ) : (
-          <SinglePears />
-        )}
-      </div>
-      <div
-        onClick={() => {
-          scrollToNext(1);
-          setSlider(3);
-        }}
-        className={`fruit-image-div apple-position-${slider}`}
-      >
-        <img src={Apples} alt="" className="fruit-slider-image" />
-      </div>
-      <div
-        onClick={() => {
-          scrollToNext(2);
-          setSlider(1);
-        }}
-        className={`fruit-image-div exotic-position-${slider}`}
-      >
-        <img src={PassionFruit} alt="" className="fruit-slider-image" />
+      <div className="fruits-div">
+        <div
+          className={`fruit-image-div pear-position-${slider}`}
+          onClick={() => setSlider(2)}
+        >
+          <img src={Pears} alt="" className={`fruit-slider-image`} />
+        </div>
+        <div
+          className={`fruit-image-div apple-position-${slider}`}
+          onClick={() => setSlider(3)}
+        >
+          <img src={Apples} alt="" className={`fruit-slider-image`} />
+        </div>
+        <div
+          className={`fruit-image-div exotic-position-${slider}`}
+          onClick={() => setSlider(1)}
+        >
+          <img src={PassionFruit} alt="" className={`fruit-slider-image`} />
+        </div>
       </div>
     </>
   );

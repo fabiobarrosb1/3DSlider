@@ -11,36 +11,16 @@ const Slider = () => {
   const divRefs = useRef([]);
   const [slider, setSlider] = useState(1);
 
-  const scrollToNext = (index) => {
-    const nextIndex = (index + 1) % divRefs.current.length;
-    divRefs.current[nextIndex]?.scrollIntoView({
-      behavior: "smooth",
-      block: "start",
-      inline: "nearest",
-      scrollIntoViewOptions: {
-        behavior: "smooth", // Adjust the duration of the animation here
-        duration: 1000, // Duration in milliseconds
-      },
-    });
-  };
-
   return (
     <>
-      <div className="slider">
+      <div className="slider-container">
         <Navbar slider={slider} />
-        <Can slider={slider} />
+        <FruitsSlider slider={slider} setSlider={setSlider} />
         <MainButton slider={slider} />
-        <FruitsSlider
-          slider={slider}
-          setSlider={setSlider}
-          scrollToNext={scrollToNext}
-        />
-        <TextSlider
-          slider={slider}
-          divRefs={divRefs}
-          setSlider={setSlider}
-          scrollToNext={scrollToNext}
-        />
+        <Can slider={slider} />
+        <div className={`slider slider-slide-${slider}`}>
+          <TextSlider slider={slider} divRefs={divRefs} setSlider={setSlider} />
+        </div>
       </div>
     </>
   );

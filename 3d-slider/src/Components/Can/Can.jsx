@@ -11,27 +11,29 @@ import shadow3 from "../../Assets/Shadow3.webp";
 
 const Can = ({ slider }) => {
   return (
-    <div className="container">
-      <img
-        src={leave1}
-        alt=""
-        className={`leave1-image leave1-image-slider${slider}`}
-      />
-      <img
-        src={leave2}
-        alt=""
-        className={`leave2-image leave2-image-slider${slider}`}
-      />
-      <img src={shadow} alt="" className="shadow" />
-      <img src={shadow2} alt="" className="shadow2" />
-      <img src={shadow3} alt="" className="shadow3" />
-      <div className="mask">
-        <img src={can} className="can-can" alt="" />
+    <div className="can-container">
+      <div className="container">
         <img
-          src={labels}
+          src={leave1}
           alt=""
-          className={`label-imagem label-imagem-slider${slider}`}
+          className={`leave1-image leave1-image-slider${slider}`}
         />
+        <img
+          src={leave2}
+          alt=""
+          className={`leave2-image leave2-image-slider${slider}`}
+        />
+        <img src={shadow} alt="" className="shadow" />
+        <img src={shadow2} alt="" className="shadow2" />
+        <img src={shadow3} alt="" className="shadow3" />
+        <div className="mask">
+          <img src={can} className="can-can" alt="" />
+          <img
+            src={labels}
+            alt=""
+            className={`label-imagem label-imagem-slider${slider}`}
+          />
+        </div>
       </div>
     </div>
   );
