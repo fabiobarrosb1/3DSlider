@@ -1,12 +1,14 @@
 
 .shop-taste-button {
   position: absolute;
-  bottom: 5%;
+  margin-top: 580px;
+  margin-bottom: 2rem;
+    box-sizing: border-box;
   left: 50%;
   transform: translateX(-50%);
   font-size: 2rem;
   border: none;
-  margin: 0;
+ 
   padding: 1.5rem 2.5rem;
   border-radius: 4rem;
   z-index: 3;
@@ -43,6 +45,49 @@
   background-color: #433EB2;
 }
 
-@media screen and (max-width: 430px) {
+
+@media screen and (min-width: 1200px) {
+  .shop-taste-button {
+    bottom: auto;
+    margin-top: 780px;
+    box-sizing: border-box;
+  }
+}
+
+
+
+@media screen and (min-width: 1600px) {
+  .shop-taste-button {
+    bottom: auto;
+    margin-top: 780px;
+    box-sizing: border-box;
 
   }
+}
+@media screen and (min-width: 1800px) {
+  .shop-taste-button {
+    bottom: auto;
+    margin-top: 880px;
+    box-sizing: border-box;
+    font-size: 3.5rem;
+  }
+}
+@media screen and (min-width: 2000px) {
+  .shop-taste-button {
+    bottom: auto;
+    margin-top: 980px;
+    box-sizing: border-box;
+  }
+}
+
+@media screen and (min-width: 2400px) {
+  .shop-taste-button {
+    bottom: auto;
+    margin-top: 1080px;
+    box-sizing: border-box;
+
+  }
+}
+
+
+  
