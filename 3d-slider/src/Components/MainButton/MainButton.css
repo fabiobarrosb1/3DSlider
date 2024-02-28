@@ -49,8 +49,11 @@
 @media screen and (min-width: 1200px) {
   .shop-taste-button {
     bottom: auto;
-    margin-top: 780px;
+    margin-top: 660px;
     box-sizing: border-box;
+  }
+  .slider {
+    min-height: 775px;
   }
 }
 
@@ -61,7 +64,9 @@
     bottom: auto;
     margin-top: 780px;
     box-sizing: border-box;
-
+  }
+  .slider {
+    min-height: 890px;
   }
 }
 @media screen and (min-width: 1800px) {
@@ -71,12 +76,18 @@
     box-sizing: border-box;
     font-size: 3.5rem;
   }
+  .slider {
+    min-height: 1025px;
+  }
 }
 @media screen and (min-width: 2000px) {
   .shop-taste-button {
     bottom: auto;
     margin-top: 980px;
     box-sizing: border-box;
+  }
+  .slider {
+    min-height: 1120px;
   }
 }
 
@@ -85,7 +96,9 @@
     bottom: auto;
     margin-top: 1080px;
     box-sizing: border-box;
-
+  }
+  .slider {
+    min-height: 1230px;
   }
 }
 
