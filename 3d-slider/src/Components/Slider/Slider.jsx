@@ -16,7 +16,7 @@ const Slider = () => {
       <div className="slider-container">
         <Navbar slider={slider} />
         <FruitsSlider slider={slider} setSlider={setSlider} />
-        <MainButton slider={slider} />
+        <MainButton slider={slider} setSlider={setSlider} />
         <Can slider={slider} setSlider={setSlider} />
         <div className={`slider slider-slide-${slider}`}>
           <TextSlider slider={slider} divRefs={divRefs} setSlider={setSlider} />
